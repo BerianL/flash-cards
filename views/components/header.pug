@@ -1,0 +1,17 @@
+.navbar.bg-base-300.shadow-lg.sticky.top-0.z-50
+    .navbar-start
+        .dropdown
+            if name
+                form(action='/goodbye', method='POST')
+                    .tooltip.tooltip-right.tooltip-accent(data-tip=`Sign Out`)
+                        button.btn.btn-circle(tabindex="0" class="bg-success/10 hover:bg-success hover:text-success-content")
+                             i.fas.fa-sign-out-alt
+    .navbar-center
+        a.font-bold.normal-case.text-xl Flash Cards
+    .navbar-end
+        .tooltip.tooltip-left.tooltip-accent(data-tip=`Change Theme`)
+            button.btn.btn-circle.themeSwitcher(tabindex="0" class="bg-success/10 hover:bg-success hover:text-success-content")
+                i#themeIcon.fas.text-xl
+
+
+

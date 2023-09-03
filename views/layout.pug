@@ -1,0 +1,48 @@
+doctype html
+html(lang="en" data-theme=theme)
+    head
+        // Flash Cards - An awesome way to learn!
+        // by Berian Lowe (github.com/BerianL)
+
+        block meta
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(charset="UTF-8")
+            meta(name="description", content="Flash Cards - An awesome way to learn!")
+            meta(name="author", content="Berian Lowe (github.com/BerianL)")
+            meta(name="keywords", content="Flash Cards, Flash, Cards, Learn, Learning, Study, Studying, Education, Educational")
+
+        block headTitle
+            title Flash Cards - An awesome way to learn!
+
+        block favicons
+            link(rel="apple-touch-icon", sizes="180x180", href="/images/icons/apple-touch-icon.png")
+            link(rel="icon", type="image/png", sizes="32x32", href="/images/icons/favicon-32x32.png")
+            link(rel="icon", type="image/png", sizes="16x16", href="/images/icons/favicon-16x16.png")
+            link(rel="manifest", href="/images/icons/site.webmanifest")
+            link(rel="mask-icon", href="/images/icons/safari-pinned-tab.svg", color="#5bbad5")
+            meta(name="msapplication-TileColor", content="#da532c")
+            meta(name="theme-color", content="#ffffff")
+
+        block localCSS
+            link(rel='stylesheet', href='/css/styles.css')
+            link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css')
+            script(src="https://cdn.jsdelivr.net/npm/sweetalert2@11")
+    body
+
+        .flex.flex-col.h-screen.overflow-none
+            include components/header.pug
+            .bg-success.flex-grow
+                .grid.place-items-center.gap-4.py-16
+                    .container.grid.place-items-center
+                        .card.bg-base-100.shadow-xl
+                            .card-body.items-center.text-center
+                                if name
+                                    h2.text-4xl.font-bold Welcome, #{name}!
+
+                                else
+                                    h2.text-4xl.font-bold Welcome, student!
+                    block content
+            include components/footer.pug
+
+        block localJS
+            script(src='/js/scripts.js')

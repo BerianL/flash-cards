@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    .container.grid.place-items-center
+        .card.w-96.bg-base-100.shadow-xl(style="opacity: 0; transform: translateY(20px); animation: fadeInUp 0.5s ease-in-out forwards;")
+            .card-body.items-center.text-center
+                h2.text-4xl.font-bold= error.message
+                if error.status != undefined
+                    h3.text-2xl.font-bold Error Code: #{error.status}

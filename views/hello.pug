@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+    .container.grid.place-items-center
+        .card.w-96.bg-base-100.shadow-xl
+            .card-body.items-center.text-center
+                h2.text-4xl.font-bold Welcome to
+                    br
+                    | Flash Cards!
+
+
+                    form(action='/hello', method='POST', id='nameForm')
+                        .form-control
+                            label.sr-only Please enter your name:
+                            input(type='text', name='username' placeholder='Enter your name:').input.input-bordered.input-success.w-full.my-5
+                            .card-actions.justify-center
+                                button(tabindex="0" type="submit").btn.btn-success.btn-xs
+                                    i.fas.fa-thumbs-up
+                                    | Let's go!
+                    script(src='/js/validate.js')
+

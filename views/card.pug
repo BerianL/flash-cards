@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+    .container.grid.place-items-center
+        .card.w-96.bg-base-100.shadow-xl(style="opacity: 0; transform: perspective(1000px) rotateY(180deg) translateY(20px); animation: flipInY 0.5s ease-in-out forwards;")
+            .card-body
+                if (changeSide === 'answer')
+                    h2.card-title.text-4xl.font-bold Question
+                else
+                    h2.card-title.text-4xl.font-bold Answer
+                p.text-2xl= text
+                if hint
+                    p.text-base.text-base-content.italic.text-sm Hint: #{hint}
+                .card-actions.justify-between.mx-16
+                    .tooltip.tooltip-left.tooltip-accent(data-tip=`Show random card`)
+                        a(href=`${randomCard}?side=question`).btn.btn-success.btn-circle
+                            i.fas.fa-dice.text-3xl
+                    .tooltip.tooltip-right.tooltip-accent(data-tip=`Show ${changeSide}`)
+                        a(href=`${id}?side=${changeSide}`).btn.btn-success.btn-circle
+                            i.fas.fa-sync.text-3xl

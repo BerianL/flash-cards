@@ -1,0 +1,122 @@
+{
+  "data": {
+    "title": "JavaScript Flashcards",
+    "cards": [
+      {
+        "question": "What is the purpose of a JavaScript closure?",
+        "hint": "This answer might be out of your 'scope'.",
+        "answer": "JavaScript closures allow a function to access its outer function's variables even after the outer function has finished executing."
+      },
+      {
+        "question": "How can you check if a variable is an array in JavaScript?",
+        "hint": "There's a 'method' to this madness.",
+        "answer": "You can use the Array.isArray(variable) method to check if a variable is an array in JavaScript."
+      },
+      {
+        "question": "Describe what the 'bind' method does in JavaScript.",
+        "hint": "I'm sure you know 'this' one.",
+        "answer": "The 'bind' method in JavaScript is used to set the value of 'this' for a function, creating a new function with a fixed 'this' value."
+      },
+      {
+        "question": "What does the term 'NaN' stand for in JavaScript?",
+        "hint": "This one doesn't add up.",
+        "answer": "'NaN' in JavaScript stands for 'Not-a-Number,' indicating an undefined or unrepresentable numeric value."
+      },
+      {
+        "question": "How do you convert a string to an integer in JavaScript?",
+        "hint": "Parse this question carefully.",
+        "answer": "You can use the parseInt() function in JavaScript to convert a string to an integer."
+      },
+      {
+        "question": "What is the purpose of routing in Express.js?",
+        "hint": "Do you want me to guide you to the answer?",
+        "answer": "Routing in Express.js determines how the application responds to specific URLs or routes."
+      },
+      {
+        "question": "What is middleware chaining in Express.js?",
+        "hint": "You may need directions to get this one.",
+        "answer": "Middleware chaining in Express.js involves applying a series of middleware functions to process an HTTP request in a specific order."
+      },
+      {
+        "question": "How do you handle POST requests in Express.js?",
+        "hint": "I can depend on you to get this one!",
+        "answer": "To handle POST requests in Express.js, you use middleware like body-parser to access and decode data from the request body."
+      },
+      {
+        "question": "What is the primary purpose of the 'next()' function in Express.js middleware?",
+        "hint": "What happens in a relay race?",
+        "answer": "The 'next()' function in Express.js middleware passes control to the next middleware function in the chain, orchestrating the flow of the request."
+      },
+      {
+        "question": "How do you serve static files in Express.js?",
+        "hint": "Stop and think about this one before answering.",
+        "answer": "To serve static files in Express.js, you use the express.static middleware, directing it to fetch files from a specified directory."
+      },
+      {
+        "question": "What is Pug's alternative name, and why was it renamed?",
+        "hint": "Its former name was a precious stone.",
+        "answer": "Pug was formerly known as Jade but was renamed due to copyright issues to avoid legal conflicts."
+      },
+      {
+        "question": "How does Pug handle HTML indentation?",
+        "hint": "This is where Pug 'reigns' supreme.",
+        "answer": "Pug uses indentation to define the hierarchy and structure of HTML elements, making the code more concise and readable."
+      },
+      {
+        "question": "What are mixins in Pug?",
+        "hint": "This one could leave you high and DRY!",
+        "answer": "Mixins in Pug are reusable blocks of code that can be included in Pug templates to generate HTML elements or structures."
+      },
+      {
+        "question": "How can you access one Pug file within another?",
+        "hint": "You wouldn't want to exclude this one from your knowledge.",
+        "answer": "To include one Pug file within another, you use the include command in Pug."
+      },
+      {
+        "question": "What does the '#{variable}' syntax do in Pug?",
+        "hint": "I bet you know the #{answer} to this one!",
+        "answer": "The '#{variable}' syntax in Pug is used to insert the value of a JavaScript variable or expression into the template."
+      },
+      {
+        "question": "What is the benefit of using DaisyUI with TailwindCSS?",
+        "hint": "Why wouldn't you want to design your UI from scratch each time?",
+        "answer": "Using DaisyUI with TailwindCSS accelerates UI development by providing pre-designed components, making your design tastier and visually appealing."
+      },
+      {
+        "question": "How can you install DaisyUI in a TailwindCSS project?",
+        "hint": "I'm sure you can 'manage' this one!",
+        "answer": "To install DaisyUI in a TailwindCSS project, you can use a package manager like npm or yarn, e.g. 'npm install daisyui'."
+      },
+      {
+        "question": "What is the main philosophy behind TailwindCSS's approach to styling web applications?",
+        "hint": "Sometimes, subtraction is the key to multiplication",
+        "answer": "TailwindCSS embraces a minimalist approach to styling web applications, with each utility class serving a specific purpose."
+      },
+      {
+        "question": "How does TailwindCSS help maintain consistent design across web applications?",
+        "hint": "Think Andre Rieu.",
+        "answer": "TailwindCSS acts as a conductor, orchestrating a symphony of design elements through utility classes, ensuring consistency in web application styling."
+      },
+      {
+        "question": "What is the purpose of the '@apply' directive in TailwindCSS?",
+        "hint": "Sharing is caring.",
+        "answer": "The '@apply' directive in TailwindCSS enables you to apply TailwindCSS's design styles within your custom CSS, ensuring a harmonious blend of utility and custom styles."
+      },
+      {
+        "question": "Explain the concept of utility-first CSS in TailwindCSS.",
+        "hint": "Think of a LEGO set where you can combine different pieces to construct a design.",
+        "answer": "Utility-first CSS in TailwindCSS involves constructing a design by selecting and combining utility classes."
+      },
+      {
+        "question": "How does TailwindCSS handle responsive design?",
+        "hint": "Imagine TailwindCSS as a tailor.",
+        "answer": "TailwindCSS facilitates responsive design by providing classes to adjust styling for different screen sizes and contexts."
+      },
+      {
+        "question": "What role do configuration files play in TailwindCSS?",
+        "hint": "Imagine being able to customise the rules of a game to suit your preferences.",
+        "answer": "Configuration files in TailwindCSS serve as rulebooks, allowing you to customize the design according to your project's specific requirements."
+      }
+    ]
+  }
+}

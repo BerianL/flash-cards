@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+    section#content
+    .container.grid.place-items-center
+        form(action='/cards', method='GET')
+            button(tabindex="0").btn.btn-primary.btn
+                i.fas.fa-play-circle
+                |  Begin!
